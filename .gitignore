@@ -1,0 +1,5 @@
+learning_sql/*.db
+**/__pycache__/
+**/.history/
+**/.vscode/
+**.log

@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+
+#countlabel {
+    display: block;
+    text-align: center;
+    font-size: 8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttoncontainer {
+    text-align: center;
+}
+
+#random_number_container{
+    text-align: center;
+}
+
+#click_for_generate{
+    text-align: center;
+}
+
+#generate_random {
+    font-size: 8em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(7, 137, 96);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+
+}
+
+.buttons:hover {
+    background-color: rgb(4, 80, 56)
+}

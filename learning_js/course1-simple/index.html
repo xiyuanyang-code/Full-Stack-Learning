@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="view-report" content="width=device-width, initial-scale=1.0">
+    <title>Docunment</title>
+
+    <!-- link several files -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- add greetings -->
+    <h1 id="greetings">Welcome!</h1>
+    <label>Enter your username:</label>
+    <input id="user_name">
+    <button id="submit for username">submit</button>
+
+    <h2>Introductions</h2>
+    <p>This is a small website for demonstrating my javascripts roadmaps</p>
+
+    <h2>Calculations</h2>
+    <p>Please enter the radius</p>
+    <label>Enter the radius of the circle:</label>
+    <input id="radius_input">
+    <button id="submit for radius_input">submit</button>
+    <p id="answer">Waiting for calculation...</p>
+
+    <label id="countlabel">0</label><br>
+    <div id="buttoncontainer">
+        <button id="decreasebtn" class="buttons">Decrease</button>
+        <button id="increasebtn" class="buttons">Increase</button>
+        <button id="resetbtn" class="buttons">Reset</button>
+    </div>
+
+    <h2>Random Number generater</h2>
+    <div id="random_number_container">
+        <label id="generate_random">🤡</label>
+    </div>
+
+    <br><br>
+
+
+    <label>Enter the upper bound and the lower bound</label>
+    <input id="inputnum_1">
+    <input id="inputnum_2">
+    <button id="submit for inputnum">submit</button><br>
+    <div id="click_for_generate"><br>
+        <button id="generate" class="buttons">Click for generate</button>
+    </div>
+
+    <h2>Check Box</h2>
+    <input type="checkbox" id="mycheckbox">
+    <label for="mycheckbox">Subscribe</label><br>
+
+    <input type="radio" id="visabtn" name="card">
+    <label for="visabtn">Visa</label>
+    <br>
+
+    <input type="radio" id="mastercard" name="card">
+    <label for="mastercard">Master</label>
+    <br>
+
+    <button id="paycard">Click for subscribe!</button>
+    <p id="subresult">1</p>
+    <p id="payresult"></p>
+
+
+    <h3>String Methods Demo</h3>
+    <p id="string-method"></p>
+
+    <div id="dice-container">
+        <h1>Dice Roller</h1>
+        <input type="number" min="1" id="dice-num">
+        <button id="click-btn" onclick="RollDice()">Roll Dice</button>
+        <div id="dice-result"></div>
+    </div>
+
+    <!-- place at the bottom -->
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
