@@ -1,0 +1,8 @@
+[
+    {
+        "name": "amy",
+        "grades": 100,
+        "school": "sjtu",
+        "hobbies": ["1", "2", "3", "4"]
+    }
+]

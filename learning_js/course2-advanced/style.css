@@ -43,3 +43,26 @@ body {
 .buttons:hover {
     background-color: rgb(4, 80, 56)
 }
+
+.box{
+    padding: 10px 20px;
+    background-color: #00ffff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+}
+
+.mybutton{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;;
+    padding: 10px 15px;
+}
+
+.enabled{
+    background-color: blue;
+    color: white;
+}

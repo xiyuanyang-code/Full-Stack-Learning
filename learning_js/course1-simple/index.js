@@ -163,72 +163,72 @@ function RollDice() {
 
 
 // call back & not call back
-// const hello = () => setTimeout(function() { console.log("Hello without callback");}, 3000);
-// const goodbye = () => console.log("Goodbye without callback");
+const hello = () => setTimeout(function() { console.log("Hello without callback");}, 3000);
+const goodbye = () => console.log("Goodbye without callback");
 
-// function hello_with_callback(callback) {
-//     setTimeout(function() {
-//         console.log("Hello with callback");
-//         callback()
-//     }, 3000);
-// }
+function hello_with_callback(callback) {
+    setTimeout(function() {
+        console.log("Hello with callback");
+        callback()
+    }, 3000);
+}
 
-// function goodbye_with_callback() {
-//     console.log("Goodbye with callback")
-// }
+function goodbye_with_callback() {
+    console.log("Goodbye with callback")
+}
 
-// console.log("This is the function without using callback:")
-// hello()
-// goodbye()
+console.log("This is the function without using callback:")
+hello()
+goodbye()
 
-// console.log("This is the function using callback:")
-// hello_with_callback(goodbye_with_callback)
+console.log("This is the function using callback:")
+hello_with_callback(goodbye_with_callback)
 
 
 // advanced usage with array
-// function echo_number(value, index, array) {
-//     console.log(`The value of this is ${value}`)
-//     console.log(`The index is ${index}`)
-//     console.log(`The whole array is ${array}`)
-//     return value
-// }
+function echo_number(value, index, array) {
+    console.log(`The value of this is ${value}`)
+    console.log(`The index is ${index}`)
+    console.log(`The whole array is ${array}`)
+    return value
+}
 
-// function pow(element) {
-//     return Math.pow(element, 2);
-// }
+function pow(element) {
+    return Math.pow(element, 2);
+}
 
-// function is_odd(element, index, array) {
-//     return element % 2 == 0;
-// }
+function is_odd(element, index, array) {
+    return element % 2 == 0;
+}
 
-// let number = [];
-// for (let i = 1; i <= 10; i++) {
-//     number.push(i);
-// }
+let number = [];
+for (let i = 1; i <= 10; i++) {
+    number.push(i);
+}
 
-// //* 1 forEach method: no return value
-// value = number.forEach(echo_number)
-// // no return value, it will return undefined
-// console.log(value)
+//* 1 forEach method: no return value
+value = number.forEach(echo_number)
+// no return value, it will return undefined
+console.log(value)
 
-// // * 2 pow method: return an array
-// console.log(number.map(pow))
+// * 2 pow method: return an array
+console.log(number.map(pow))
 
-// // .filter using a predicate for boolean return value, return an array
-// console.log(number.filter(is_odd))
+// .filter using a predicate for boolean return value, return an array
+console.log(number.filter(is_odd))
 
-// // .reduce
-// // 4 parameters: previous value(for recursion), current value, current index and array
-// // !previous value is the return value for the previous element as the parameter
-// function sum(previous_value, current_value, current_index, array) {
-//     console.log(`Previous value is ${previous_value}`)
-//     console.log(`current value is ${current_value}`)
-//     console.log(`current index is ${current_index}`)
-//     console.log(`The whole array ${array}`)
-//     return current_value + previous_value
-// }
-// const sum_all = number.reduce(sum)
-// console.log(sum_all)
+// .reduce
+// 4 parameters: previous value(for recursion), current value, current index and array
+// !previous value is the return value for the previous element as the parameter
+function sum(previous_value, current_value, current_index, array) {
+    console.log(`Previous value is ${previous_value}`)
+    console.log(`current value is ${current_value}`)
+    console.log(`current index is ${current_index}`)
+    console.log(`The whole array ${array}`)
+    return current_value + previous_value
+}
+const sum_all = number.reduce(sum)
+console.log(sum_all)
 
 
 // destructuring
@@ -246,16 +246,15 @@ console.log(`${remainng}`);
 
 // use {} for destructuring in objects
 
-
 // OOP in javascripts: like struct in Cpp
-// person_1 = {
-//     firstname: "hello word",
-//     lastname: "wow",
-//     is_male: true,
-//     final_answer: this.lastname,
-// };
+person_1 = {
+    firstname: "hello word",
+    lastname: "wow",
+    is_male: true,
+    final_answer: this.lastname,
+};
 
-// console.log(person_1.firstname)
+console.log(person_1.firstname)
 
 // constructor is js
 function Student(name, gender, id, grades) {
